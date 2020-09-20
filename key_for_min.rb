@@ -4,10 +4,11 @@
 def key_for_min_value(name_hash)
   smallest = 9999
   result = " "
-  name_hash.each do |key, value|
-    if name_hash.empty? 
+  if name_hash.empty? 
       return nil
-    elsif value < smallest
+  end
+  name_hash.each do |key, value|
+    if value < smallest
       smallest = value
       result = key
     end
