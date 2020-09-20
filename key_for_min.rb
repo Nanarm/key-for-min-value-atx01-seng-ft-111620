@@ -5,11 +5,11 @@ def key_for_min_value(name_hash)
   smallest = 9999
   result = " "
   name_hash.each do |key, value|
-    if value < smallest
+    if name_hash.empty? 
+      return nil
+    elsifif value < smallest
       smallest = value
       result = key
-    elsif name_hash.empty? 
-      return nil
     end
   end
   result
