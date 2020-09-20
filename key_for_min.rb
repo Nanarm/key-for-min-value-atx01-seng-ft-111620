@@ -4,7 +4,7 @@
 def key_for_min_value(name_hash)
   smallest = 9999
   name_hash.each do |key, value|
-    if value < smellest
+    if value < smallest
       smallest = key
     else nil
     end
